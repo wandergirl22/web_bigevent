@@ -17,7 +17,7 @@ function getUserInfo() {
             console.log(res);
             // 添加判断 失败不执行下面的内容
             if (res.status !== 0) return layer.msg("获取用户信息失败！");
-            layer.msg("获取用户信息成功！");
+            // layer.msg("获取用户信息成功！");
             // 调用渲染函数
             renderAvatar(res.data)
         },
