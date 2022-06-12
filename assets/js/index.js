@@ -73,3 +73,11 @@ $("#btnLogout").click(() => {
         }
     );
 });
+
+$('.layui-nav-child dd').on('click', function(){
+    $(this).parents('layui-header').siblings('layui-side').children('layui-nav-item').click();
+})
+// 切换高亮
+function change(){
+    $('#change').addClass('layui-this').next().removeClass('layui-this')
+}
